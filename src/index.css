@@ -25,3 +25,13 @@ body,html{
  color:  rgba(255, 255, 255, 0.85);
 }
 
+.bordergradient{
+  border: 3px solid transparent;
+  border-radius: 20px;
+  background: 
+    linear-gradient(to right, #19191B, #19191B), 
+    linear-gradient(to right, #FE53BB , #09FBD3); 
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box; 
+}
+
