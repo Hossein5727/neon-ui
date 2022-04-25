@@ -3,7 +3,7 @@ import Header from "../components/Header";
 
 function HomePage() {
   return (
-    <div className="bggradinet border-none outline-none rounded-2xl ">
+    <div className="bggradinet border-none outline-none ">
       <Header />
       <div className="w-[full] flex justify-center items-center px-3 py-2">
         <img className="" src={avatarImg} alt="avatar" />

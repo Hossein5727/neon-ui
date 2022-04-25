@@ -3,7 +3,7 @@ import { HomePage } from "./pages";
 
 function App() {
   return (
-    <div className="bg-black w-full h-[100vh] rounded-2xl">
+    <div className="bg-black w-full h-[100vh]">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />
