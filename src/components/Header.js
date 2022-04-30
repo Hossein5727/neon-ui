@@ -21,7 +21,7 @@ function Header() {
   }, []);
 
   return (
-    <div className="w-full px-1 py-1 flex justify-between items-center mb-4 bg-transparent">
+    <div className="w-full px-4 py-1 flex justify-between items-center mb-4 bg-transparent">
       <div className="flex items-center text-white">
         <p>{clock.getHours()}:</p>
         <p>{clock.getMinutes()}</p>
