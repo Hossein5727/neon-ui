@@ -4,13 +4,18 @@ import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import { Pagination } from "swiper";
 import searchBarIcon from "../assets/images/magnifyingglass.svg";
 import microphoneIcon from "../assets/images/microphone.svg";
+import homeIcon from "../assets/images/Symbol.svg";
+import videoIcon from "../assets/images/play.svg";
+import fileIcon from "../assets/images/file.svg";
+import downloadIcon from "../assets/images/download.svg";
+import plusIcon from "../assets/images/plus.svg";
 import { movieData } from "../data/movieData";
 
 function ShopPage() {
   const swiperSetting = useSwiper();
 
   return (
-    <div className="w-full shop-page">
+    <div className="w-full shop-page relative">
       <Header />
 
       <div className="w-full text-white px-4">
@@ -62,6 +67,21 @@ function ShopPage() {
             </div>
           ))}
         </div>
+      </div>
+
+      <div className="bottom-navigation z-10 px-9 w-full h-[70px] absolute bottom-0 left-0 right-0 flex justify-between items-center">
+        <div className="flex items-center gap-9">
+          <img src={homeIcon} alt="homeicon" />
+          <img src={videoIcon} alt="videoicon" />
+        </div>
+        <div className="flex items-center gap-9">
+          <img src={fileIcon} alt="fileicon" />
+          <img src={downloadIcon} alt="downloadicon" />
+        </div>
+
+        <button className="w-[60px] h-[60px] rounded-full bordergradient2 absolute left-[42%] -top-6 flex justify-center items-center">
+          <img src={plusIcon} />
+        </button>
       </div>
     </div>
   );
