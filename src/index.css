@@ -70,3 +70,7 @@ body,html{
   height: 100vh;
   background: url(./assets/images/Backgroundshoppage.svg) center no-repeat transparent;
 }
+
+.searchbar{
+  background: rgba(118, 118, 128, 0.12);
+}

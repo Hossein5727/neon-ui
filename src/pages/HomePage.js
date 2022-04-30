@@ -5,9 +5,6 @@ import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import { Pagination } from "swiper";
 import { Link } from "react-router-dom";
 
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
 
 const slideProperty = [{ id: 1 }, { id: 2 }, { id: 3 }];
 

@@ -1,6 +1,11 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { HomePage, ShopPage } from "./pages";
 
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+
+
 function App() {
   return (
     <div className="bg-black w-full h-[100%]">
