@@ -15,9 +15,9 @@ body,html{
 }
 
 .bggradinet{
-   /* background: rgb(254,83,187); 
-  background: linear-gradient(135deg, rgba(254,83,187,0.3) 40%, rgba(9,251,211,0.3) 100%);   */
-  background: url(./assets/images/Background.png) transparent no-repeat center;
+   /* background: rgb(254,83,187);  
+  background: linear-gradient(135deg, rgba(254,83,187,0.3) 40%, rgba(9,251,211,0.3) 100%);  */
+  background: url(./assets/images/Background.png) transparent no-repeat top;
   /* background:radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%); */
 }
 
@@ -33,6 +33,20 @@ body,html{
     linear-gradient(to right, #FE53BB , #09FBD3); 
   background-clip: padding-box, border-box;
   background-origin: padding-box, border-box; 
+  /* background-blend-mode: overlay; */
+  position: relative;
+}
+
+.bordergradient::after{
+  position: absolute;
+  inset: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(104.74deg, rgba(254, 83, 187, 0.5) 25.73%, rgba(9, 251, 211, 0.5) 66.52%);
+  filter: blur(32px);
+  border-radius: 20px;
+  z-index: 2;
 }
 
 .swiper-pagination-bullet {
@@ -50,4 +64,9 @@ body,html{
 .swiper-pagination-bullet-active {
   color: #fff;
   background: #08F7FE !important;
+}
+
+.shop-page{
+  height: 100vh;
+  background: url(./assets/images/Backgroundshoppage.svg) center no-repeat transparent;
 }
