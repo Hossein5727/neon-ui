@@ -1,3 +1,8 @@
+import AngelinaImg from "../assets/images/angelina.png";
+import GemmaImg from "../assets/images/Gemma.png";
+import SalmaImg from "../assets/images/Salma.png";
+import RichardImg from "../assets/images/Richard.png";
+
 export const eternalMovieData = {
   title: "Eternals",
   detail: " 2021 Action-Adventure-Fantasy 2h36m",
@@ -9,3 +14,10 @@ export const eternalMovieData = {
   historyClass:
     "font-[400] text-[14px] leading-[17px] tracking-[0.01rem] w-[241px]",
 };
+
+export const eternalMoieCasts = [
+  { id: 1, img: AngelinaImg, name: "Angelina Jolie" },
+  { id: 2, img: GemmaImg, name: "Gemma Chan" },
+  { id: 3, img: SalmaImg, name: "Salma Hayek" },
+  { id: 4, img: RichardImg, name: "Richard Madden" },
+];

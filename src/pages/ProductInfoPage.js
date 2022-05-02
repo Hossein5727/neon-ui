@@ -5,6 +5,7 @@ import plusIcon from "../assets/images/play1.svg";
 import menu from "../assets/images/Menu button.svg";
 import rating from "../assets/images/Rating.svg";
 import { Navigate, useNavigate } from "react-router-dom";
+import { eternalMoieCasts } from "../data/eternalMovieData";
 
 function ProductInfoPage({
   titleClass,
@@ -47,10 +48,26 @@ function ProductInfoPage({
           ></div>
         </div>
       </div>
-      <div className="w-full px-6 mt-8 text-white">
+      <div className="w-full px-4 mt-6 text-white">
         <h2 className="font-[700] text-[20px] leading-[27px] tracking-[0.38px]">
           Casts
         </h2>
+
+        <div className="w-full gap-5 flex justify-start items-center flex-wrap mt-3">
+          {eternalMoieCasts.map((item) => (
+            <div
+              key={item.id}
+              className="flex items-center gap-2 w-[164px] h-[60px]  containerCast"
+            >
+              <img
+                className="w-[60px] h-[60px] rounded-full object-cover -ml-2 mr-1"
+                src={item.img}
+                alt={item.name}
+              />
+              <h3>{item.name}</h3>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
