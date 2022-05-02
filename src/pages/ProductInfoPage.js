@@ -41,9 +41,17 @@ function ProductInfoPage({
             <img src={rating} />
           </div>
           <p className={historyClass}>{history}</p>
+          <div
+            className="w-[290px] h-[2px]"
+            style={{ background: "rgba(255, 255, 255, 0.15)" }}
+          ></div>
         </div>
       </div>
-      ProductInfoPage
+      <div className="w-full px-6 mt-8 text-white">
+        <h2 className="font-[700] text-[20px] leading-[27px] tracking-[0.38px]">
+          Casts
+        </h2>
+      </div>
     </div>
   );
 }
