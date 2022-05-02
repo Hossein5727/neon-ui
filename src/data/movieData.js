@@ -6,12 +6,24 @@ import batman from "../assets/images/Batman.png";
 import doctorStrange from "../assets/images/Doctor Strange.png";
 
 export const movieData = [
-  { id: 1, title: "New movies", img1: spiderMan, img2: matrix, img3: eternal },
+  {
+    id: 1,
+    title: "New movies",
+    img1: spiderMan,
+    img2: matrix,
+    img3: eternal,
+    linkImg1: "/spidermaninfo",
+    linkImg2: "/matrixinfo",
+    linkImg3: "/etarnalinfo",
+  },
   {
     id: 2,
     title: "Upcoming movies",
     img1: aquaman,
     img2: batman,
     img3: doctorStrange,
+    linkImg1: "/aquamaninfo",
+    linkImg2: "/batmaninfo",
+    linkImg3: "/dsinfo",
   },
 ];

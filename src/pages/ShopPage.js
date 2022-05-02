@@ -10,6 +10,7 @@ import fileIcon from "../assets/images/file.svg";
 import downloadIcon from "../assets/images/download.svg";
 import plusIcon from "../assets/images/plus.svg";
 import { movieData } from "../data/movieData";
+import { Link } from "react-router-dom";
 
 function ShopPage() {
   const swiperSetting = useSwiper();
@@ -41,27 +42,35 @@ function ShopPage() {
               className="flex justify-start items-start flex-col gap-7 mb-5"
             >
               <h2 className="font-[400] text-[17px] leading-[23px] tracking-[-0.3px] text-white">
-                {item.title}
+                item.title
               </h2>
               <Swiper
                 modules={[Pagination]}
                 slidesPerView={3}
-                className="w-full flex"
+                className="w-full swiper-style"
               >
                 <SwiperSlide className="w-full mr-2">
-                  <img src={item.img1} />
+                  <Link to={`/productinfo${item.linkImg1}`}>
+                    <img src={item.img1} alt="img" />
+                  </Link>
                 </SwiperSlide>
 
                 <SwiperSlide className="w-full mr-2">
-                  <img src={item.img2} />
+                  <Link to={`/productinfo${item.linkImg2}`}>
+                    <img src={item.img2} alt="img" />
+                  </Link>
                 </SwiperSlide>
 
                 <SwiperSlide className="w-full mr-2">
-                  <img src={item.img3} />
+                  <Link to={`/productinfo${item.linkImg3}`}>
+                    <img src={item.img3} alt="img" />
+                  </Link>
                 </SwiperSlide>
 
                 <SwiperSlide className="w-full mr-2">
-                  <img src={item.img1} />
+                  <Link to={`/productinfo${item.linkImg1}`}>
+                    <img src={item.img1} alt="img" />
+                  </Link>
                 </SwiperSlide>
               </Swiper>
             </div>
@@ -69,7 +78,7 @@ function ShopPage() {
         </div>
       </div>
 
-      <div className="bottom-navigation z-10 px-9 w-full h-[70px] absolute bottom-0 left-0 right-0 flex justify-between items-center">
+      <div className="bottom-navigation px-9 w-[100vw] h-[70px] flex justify-between items-center">
         <div className="flex items-center gap-9">
           <img src={homeIcon} alt="homeicon" />
           <img src={videoIcon} alt="videoicon" />

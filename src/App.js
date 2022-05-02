@@ -1,10 +1,10 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { HomePage, ShopPage } from "./pages";
+import { HomePage, ProductInfoPage, ShopPage } from "./pages";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-
+import { eternalMovieData } from "./data/eternalMovieData";
 
 function App() {
   return (
@@ -13,6 +13,10 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/shoppage" element={<ShopPage />} />
+          <Route
+            path="/productinfo/:title"
+            element={<ProductInfoPage {...eternalMovieData} />}
+          />
         </Routes>
       </BrowserRouter>
     </div>
