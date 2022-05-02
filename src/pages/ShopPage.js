@@ -42,7 +42,7 @@ function ShopPage() {
               className="flex justify-start items-start flex-col gap-7 mb-5"
             >
               <h2 className="font-[400] text-[17px] leading-[23px] tracking-[-0.3px] text-white">
-                item.title
+                {item.title}
               </h2>
               <Swiper
                 modules={[Pagination]}

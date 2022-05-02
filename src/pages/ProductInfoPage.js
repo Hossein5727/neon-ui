@@ -3,6 +3,7 @@ import eternal from "../assets/images/real eternal1.png";
 import backArrow from "../assets/images/Arrow left button.svg";
 import plusIcon from "../assets/images/play1.svg";
 import menu from "../assets/images/Menu button.svg";
+import rating from "../assets/images/Rating.svg";
 import { Navigate, useNavigate } from "react-router-dom";
 
 function ProductInfoPage({
@@ -36,7 +37,9 @@ function ProductInfoPage({
         <div className="w-full absolute left-0 right-0 bottom-[1px] text-white z-[4] flex justify-center items-center flex-col text-center gap-4">
           <h4 className={titleClass}>{title}</h4>
           <p className={detailClass}>{detail}</p>
-          <div>{rate}</div>
+          <div>
+            <img src={rating} />
+          </div>
           <p className={historyClass}>{history}</p>
         </div>
       </div>
