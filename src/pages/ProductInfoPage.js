@@ -17,7 +17,7 @@ function ProductInfoPage({
   const navigate = useNavigate();
 
   return (
-    <div className=" w-full h-full bg-black">
+    <div className=" w-full h-[100vh] bg-black">
       <div className="relative productInfo w-[100vw] h-[540px] ">
         <img src={eternal} alt="eternal" className="w-full h-[full]" />
         <div className="absolute top-0 left-0 right-0 w-full">
