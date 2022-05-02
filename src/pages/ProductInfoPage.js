@@ -6,6 +6,7 @@ import menu from "../assets/images/Menu button.svg";
 import rating from "../assets/images/Rating.svg";
 import { Navigate, useNavigate } from "react-router-dom";
 import { eternalMoieCasts } from "../data/eternalMovieData";
+import { useState } from "react";
 
 function ProductInfoPage({
   titleClass,
@@ -18,14 +19,32 @@ function ProductInfoPage({
 }) {
   const navigate = useNavigate();
 
+  const [isOpen, setIsOpen] = useState(true);
+
+  const goBack = () => {
+    setIsOpen(false);
+    setTimeout(() => {
+      navigate(-1);
+    }, 500);
+  };
+
   return (
-    <div className=" w-full h-[100vh] bg-black">
+    <div
+      className={` w-full h-[100vh] bg-black animate__animated ${
+        isOpen ? "animate__fadeInRight" : "animate__fadeOutRight"
+      }  `}
+    >
       <div className="relative productInfo w-[100vw] h-[540px] ">
         <img src={eternal} alt="eternal" className="w-full h-[full]" />
         <div className="absolute top-0 left-0 right-0 w-full">
           <Header />
           <div className="w-full flex justify-between items-center px-4 mt-3">
-            <button onClick={() => navigate(-1)} className="z-[2]">
+            <button
+              onClick={() => {
+                goBack();
+              }}
+              className="z-[2]"
+            >
               <img src={backArrow} />
             </button>
             <img src={menu} />

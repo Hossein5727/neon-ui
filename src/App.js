@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { HomePage, ProductInfoPage, ShopPage } from "./pages";
+import 'animate.css';
 
 // Import Swiper styles
 import "swiper/css";

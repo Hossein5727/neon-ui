@@ -16,7 +16,7 @@ function ShopPage() {
   const swiperSetting = useSwiper();
 
   return (
-    <div className="w-full shop-page relative">
+    <div className="w-full shop-page relative ">
       <Header />
 
       <div className="w-full text-white px-4">
