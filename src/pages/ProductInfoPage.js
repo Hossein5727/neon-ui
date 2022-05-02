@@ -29,11 +29,11 @@ function ProductInfoPage({
             <img src={menu} />
           </div>
         </div>
-        <button className="w-[60px] h-[60px] rounded-full bordergradient2 absolute right-[5%] bottom-[150px] flex justify-center items-center">
+        <button className="w-[60px] h-[60px] rounded-full bordergradient2 absolute right-[5%] bottom-[160px] flex justify-center items-center">
           <img src={plusIcon} />
         </button>
 
-        <div className="w-full absolute left-0 right-0 bottom-[1px] text-white z-[2] flex justify-center items-center flex-col text-center gap-4">
+        <div className="w-full absolute left-0 right-0 bottom-[1px] text-white z-[4] flex justify-center items-center flex-col text-center gap-4">
           <h4 className={titleClass}>{title}</h4>
           <p className={detailClass}>{detail}</p>
           <div>{rate}</div>
