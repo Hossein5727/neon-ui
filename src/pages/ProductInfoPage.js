@@ -53,7 +53,7 @@ function ProductInfoPage({
           Casts
         </h2>
 
-        <div className="w-full gap-5 flex justify-start items-center flex-wrap mt-3">
+        <div className="w-full gap-5 flex justify-center items-center flex-wrap mt-3">
           {eternalMoieCasts.map((item) => (
             <div
               key={item.id}
